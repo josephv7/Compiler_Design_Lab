@@ -1,0 +1,11 @@
+void main() 
+{ 
+int a,b,c; 
+a = 20;
+b = 30;
+c = a + b;
+if(c >= a)
+printf("c is bigger than a");
+}
+
+
