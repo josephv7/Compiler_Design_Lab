@@ -5,14 +5,15 @@
 d [0-9]
 a [a-zA-Z]
 %{
-	int ctr;
+//	int ctr;
 %}
 
 %%
-void|int|if|else
-[(){}]
+void|int|if|else {printf("%s -> keyword\n",yytext);}
+(<=)|(>=) {printf("%s -> rel\n",yytext);}
+[(){},]
 [=+*\-;,<>]
-[0-9]
+[0-9]* {printf("%s -> number\n",yytext);}
 \"(\\.|[^"\\])*\"
 {a}({a}|{d})* {printf("%s -> identifier\n",yytext);}
 %%
