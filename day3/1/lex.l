@@ -5,22 +5,22 @@
 id [a-z]([a-z]|[0-9])*
 
 %%
-"switch"	{return SW;}
-"("		{return OB;}
-")"		{return CB;}
-"\n"		{return NL;}
-"{"		{return COB;}
-"case"		{return CS;}
-[0-9]*		{return NUM;}
-":"		{return Q;}
-"break"		{return BR;}
-";"		{return SEM;}
-"}"		{return CCB;}
-{id}		{return ID;}
+"switch"	{return SWITCH;}
+"("		{return OBRACKET;}
+")"		{return CBRACKET;}
+"\n"		{return NEWLINE;}
+"{"		{return COBRACKET;}
+"case"		{return CASE;}
+"default"	{return DEFAULT;}
+[0-9]*		{return NUMBER;}
+":"		{return COLON;}
+"break"		{return BREAK;}
+";"		{return SEMICOLON;}
+"}"		{return CCBRACKET;}
+{id}		{return IDENTIFIER;}
 %%
 	
 int yywrap()
 {
-	printf("Invalid in lex");
+	printf("Invalid");
 }
-
