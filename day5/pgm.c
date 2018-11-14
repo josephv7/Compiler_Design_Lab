@@ -34,17 +34,6 @@ scanf("%d",&count);
 for(int j=0;j<count;j++)
 	scanf("%s",production[j]);
 
-      
-    //strcpy(production[0], "A=BCd"); 
-    //strcpy(production[1], "A=g"); 
-    //strcpy(production[2], "B=bD"); 
-    //strcpy(production[3], "B=e"); 
-    //strcpy(production[4], "C=AD"); 
-    //strcpy(production[5], "C=f"); 
-    //strcpy(production[6], "C=#"); 
-    //strcpy(production[7], "D=h");
-    //strcpy(production[8], "D=#"); 
-      
     int kay; 
     char done[count]; 
     int ptr = -1; 
