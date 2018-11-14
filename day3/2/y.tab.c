@@ -84,10 +84,7 @@
 # define YYERROR_VERBOSE 0
 #endif
 
-/* In a future release of Bison, this section will be replaced
-   by #include "y.tab.h".  */
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -121,11 +118,11 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+
 
 /* Copy the second part of user declarations.  */
 
-#line 129 "y.tab.c" /* yacc.c:358  */
+#line 126 "y.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1198,11 +1195,11 @@ yyreduce:
         case 2:
 #line 12 "lex.y" /* yacc.c:1646  */
     {printf("Valid Input\n");}
-#line 1202 "y.tab.c" /* yacc.c:1646  */
+#line 1199 "y.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1206 "y.tab.c" /* yacc.c:1646  */
+#line 1203 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

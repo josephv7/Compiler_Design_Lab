@@ -84,10 +84,7 @@
 # define YYERROR_VERBOSE 0
 #endif
 
-/* In a future release of Bison, this section will be replaced
-   by #include "y.tab.h".  */
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -121,11 +118,11 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+
 
 /* Copy the second part of user declarations.  */
 
-#line 129 "y.tab.c" /* yacc.c:358  */
+#line 126 "y.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1198,47 +1195,47 @@ yyreduce:
         case 2:
 #line 12 "lex.y" /* yacc.c:1646  */
     {printf("Output = %d", (yyvsp[-1]));}
-#line 1202 "y.tab.c" /* yacc.c:1646  */
+#line 1199 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 13 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[-2]) + (yyvsp[0]);}
-#line 1208 "y.tab.c" /* yacc.c:1646  */
+#line 1205 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 4:
 #line 14 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[-2]) - (yyvsp[0]);}
-#line 1214 "y.tab.c" /* yacc.c:1646  */
+#line 1211 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 5:
 #line 15 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[-2]) * (yyvsp[0]);}
-#line 1220 "y.tab.c" /* yacc.c:1646  */
+#line 1217 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 6:
 #line 16 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[-2]) / (yyvsp[0]);}
-#line 1226 "y.tab.c" /* yacc.c:1646  */
+#line 1223 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 7:
 #line 17 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[-1]);}
-#line 1232 "y.tab.c" /* yacc.c:1646  */
+#line 1229 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 8:
 #line 18 "lex.y" /* yacc.c:1646  */
     {(yyval) = (yyvsp[0]);}
-#line 1238 "y.tab.c" /* yacc.c:1646  */
+#line 1235 "y.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1242 "y.tab.c" /* yacc.c:1646  */
+#line 1239 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
